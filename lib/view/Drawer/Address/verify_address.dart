@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:mini_project/view/BottomNavigation/Bottomnavigation.dart';
+import 'package:mini_project/view/Drawer/Payments/payment_method.dart';
 
-class AddessDrawer extends StatefulWidget {
-  const AddessDrawer({super.key});
+class VerifyAddress extends StatefulWidget {
+  const VerifyAddress({super.key});
 
   @override
-  State<AddessDrawer> createState() => _AddessDrawerState();
+  State<VerifyAddress> createState() => _VerifyAddressState();
 }
 
-class _AddessDrawerState extends State<AddessDrawer> {
-   TextEditingController namecontroller=TextEditingController();
+class _VerifyAddressState extends State<VerifyAddress> {
+  TextEditingController namecontroller=TextEditingController();
    TextEditingController flateNumcontroller=TextEditingController();
     TextEditingController floorNumcontroller=TextEditingController();
      // ignore: non_constant_identifier_names
      TextEditingController Buildingnamecontroller=TextEditingController();
       TextEditingController phonenumcontroller=TextEditingController();
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold
-    (
-         body: DefaultTabController(length: 3, child: 
+    return Scaffold(
+                   body: DefaultTabController(length: 3, child: 
       Padding(
         padding: EdgeInsetsGeometry.symmetric(
           horizontal: 24,
@@ -272,9 +270,9 @@ class _AddessDrawerState extends State<AddessDrawer> {
               ),
               
               child: TextButton(onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => Bottomnavigationscreen(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Paymentmethod(),));
                 
-              }, child: Text('Add Address',
+              }, child: Text('Verify Address',
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.w600,

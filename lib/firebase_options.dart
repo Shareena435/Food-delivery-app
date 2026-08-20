@@ -28,10 +28,7 @@ class DefaultFirebaseOptions {
           'you can reconfigure this by running the FlutterFire CLI again.',
         );
       case TargetPlatform.macOS:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for macos - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return macos;
       case TargetPlatform.windows:
         return windows;
       case TargetPlatform.linux:
@@ -47,30 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCQHyVsYuu0yFig7qaeelpsLgY9X5E9CvI',
-    appId: '1:997193546287:web:22ae15f6991906e0a564da',
-    messagingSenderId: '997193546287',
-    projectId: 'miniproject-e03d0',
-    authDomain: 'miniproject-e03d0.firebaseapp.com',
-    storageBucket: 'miniproject-e03d0.firebasestorage.app',
-    measurementId: 'G-3FNJSEGKJT',
+    apiKey: 'AIzaSyAYnKu6_K3qwCOvOhzJH3VpbzKXP4CPL3M',
+    appId: '1:363386000872:web:9ab046acbe83f54a60c05d',
+    messagingSenderId: '363386000872',
+    projectId: 'ogminiproject',
+    authDomain: 'ogminiproject.firebaseapp.com',
+    storageBucket: 'ogminiproject.firebasestorage.app',
+    measurementId: 'G-TSRHZ44TSF',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBVSW94wso0-gKXmtmM4SjoVwF5O9GMlTQ',
-    appId: '1:997193546287:android:1da972f938893113a564da',
-    messagingSenderId: '997193546287',
-    projectId: 'miniproject-e03d0',
-    storageBucket: 'miniproject-e03d0.firebasestorage.app',
+    apiKey: 'AIzaSyCRbOA0Y9SAykrI9i47pKXqUoG4nRrnCyA',
+    appId: '1:363386000872:android:abb7261c602c60e260c05d',
+    messagingSenderId: '363386000872',
+    projectId: 'ogminiproject',
+    storageBucket: 'ogminiproject.firebasestorage.app',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCQHyVsYuu0yFig7qaeelpsLgY9X5E9CvI',
-    appId: '1:997193546287:web:ff76e3a6d003708da564da',
-    messagingSenderId: '997193546287',
-    projectId: 'miniproject-e03d0',
-    authDomain: 'miniproject-e03d0.firebaseapp.com',
-    storageBucket: 'miniproject-e03d0.firebasestorage.app',
-    measurementId: 'G-90F37X7NSK',
+    apiKey: 'AIzaSyAYnKu6_K3qwCOvOhzJH3VpbzKXP4CPL3M',
+    appId: '1:363386000872:web:606837d38a1c468060c05d',
+    messagingSenderId: '363386000872',
+    projectId: 'ogminiproject',
+    authDomain: 'ogminiproject.firebaseapp.com',
+    storageBucket: 'ogminiproject.firebasestorage.app',
+    measurementId: 'G-HH8JTLX2J3',
+  );
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyCwBahGSjYJFdvkhNemtmXRU3n8rNlPysk',
+    appId: '1:363386000872:ios:66546b2f08d945d960c05d',
+    messagingSenderId: '363386000872',
+    projectId: 'ogminiproject',
+    storageBucket: 'ogminiproject.firebasestorage.app',
+    iosBundleId: 'com.example.miniProject',
   );
 }
